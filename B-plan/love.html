@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      #nextPageBtn {
+        position: fixed;
+
+        right: 30px;
+        bottom: 30px;
+
+        opacity: 0;
+        transform: translateY(20px);
+
+        padding: 10px 22px;
+
+        font-size: 16px;
+        border: none;
+        border-radius: 30px;
+
+        background: linear-gradient(135deg, #ff8fb1, #ff5d8f);
+        color: white;
+
+        cursor: pointer;
+
+        box-shadow: 0 8px 20px rgba(255, 93, 143, 0.35);
+
+        transition: all 0.6s ease;
+
+        z-index: 9999;
+      }
+
+      #nextPageBtn.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      #nextPageBtn:hover {
+        transform: scale(1.08);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dear Me ❤️</h1>
+
+    <p>
+      This is where your message will go. A single realistic teddy bear pressed
+      against a glass window, soft brown plush fur, nose flattened against the
+      glass, cheeks gently squished outward, large expressive eyes extremely
+      close to the camera, paws pressed on the glass surface with visible paw
+      pads, adorable curious expression, ultra realistic fur texture,
+      professional studio photography, shallow depth of field, realistic
+      lighting, high detail, photorealistic, 8K quality, cinematic close-up,
+      subtle reflections and smudges on the glass, warm cozy atmosphere,
+      centered composition, transparent background.Photorealistic teddy bear
+      with its face pressed firmly against a glass window, flattened nose,
+      compressed cheeks, big glossy eyes distorted by the glass, paws spread
+      against the surface, detailed plush fabric and stitching, realistic fur
+      strands, macro photography, ultra detailed, shallow depth of field,
+      realistic glass reflections, cute and funny expression, professional
+      lighting, 8K, transparent background, centered subject.One cute 3D teddy
+      bear pressed against a glass window, nose flattened against the glass,
+      giant curious eyes very close to the camera, cheeks squished outward, paws
+      pressed on the glass surface, goofy adorable expression, soft fluffy brown
+      fur, ultra detailed plush texture, Pixar-style 3D render, cinematic
+      lighting, shallow depth of field, centered composition, transparent
+      background, high quality, cute and heartwarming.Full screen covered by
+      hundreds of cute teddy bears pressed against glass, noses squashed flat,
+      giant eyes staring directly at the viewer, paws spread across the surface,
+      funny and lovable expressi
+    </p>
+    <button id="nextPageBtn" onclick="goNext()">Continue ❤️</button>
+  </body>
+  <script>
+    window.showButton = function () {
+      document.getElementById("nextPageBtn").classList.add("show");
+    };
+    function goNext() {
+      window.top.location.href = "memories.html";
+    }
+  </script>
+</html>
